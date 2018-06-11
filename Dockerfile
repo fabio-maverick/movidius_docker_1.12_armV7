@@ -13,6 +13,7 @@ RUN apt-get install -y sudo
 RUN apt-get install -y nano
 RUN apt-get install -y lsb-release
 RUN apt-get install -y python3-pip
+RUN apt-get install -y udev
 
 RUN git clone https://github.com/movidius/ncsdk.git /ncsdk
 RUN git clone https://github.com/movidius/ncappzoo.git /ncappzoo
@@ -24,6 +25,7 @@ RUN pip3 install --upgrade pip
 #RUN pip3 install opencv-contrib-python
 
 #TESTAR DEPOIS
+#VER SE EXISTEM DEPENDÊNCIAS
 #RUN curl -O https://ci.tensorflow.org/view/Nightly/job/nightly-pi-python3/92/artifact/output-artifacts/tensorflow-1.4.0-cp34-none-any.whl
 #RUN mv tensorflow-1.4.0-cp34-none-any.whl tensorflow-1.4.0-cp35-none-any.whl
 #RUN pip3 install tensorflow-1.4.0-cp35-none-any.whl
