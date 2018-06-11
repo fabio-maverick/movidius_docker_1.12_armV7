@@ -1,4 +1,4 @@
-FROM resin/rpi-raspian
+FROM arm32v7/ubuntu
 MAINTAINER Fabio Magalhaes<fabio.magalhaes@gmail.com>
 
 ENV PYTHONPATH /opt/movidius/mvnc/python:${PYTHONPATH}
