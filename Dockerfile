@@ -23,6 +23,12 @@ RUN pip3 install --upgrade pip
 #RUN pip3 install opencv-python
 #RUN pip3 install opencv-contrib-python
 
+#TESTAR DEPOIS
+#RUN curl -O https://ci.tensorflow.org/view/Nightly/job/nightly-pi-python3/92/artifact/output-artifacts/tensorflow-1.4.0-cp34-none-any.whl
+#RUN mv tensorflow-1.4.0-cp34-none-any.whl tensorflow-1.4.0-cp35-none-any.whl
+#RUN pip3 install tensorflow-1.4.0-cp35-none-any.whl
+#RUN rm tensorflow-1.4.0-cp35-none-any.whl
+
 WORKDIR /ncsdk
 
 #RUN apt-get install dialog
