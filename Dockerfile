@@ -23,7 +23,8 @@ RUN pip3 install --upgrade pip
 #RUN pip3 install opencv-contrib-python
 
 WORKDIR /ncsdk
-RUN make install
+
+RUN export TERM=linux && make install
 #RUN make examples
 
 # Go to NCSDK root
