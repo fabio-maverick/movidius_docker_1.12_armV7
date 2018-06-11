@@ -3,6 +3,7 @@ MAINTAINER Fabio Magalhaes<fabio.magalhaes@gmail.com>
 
 ENV PYTHONPATH /opt/movidius/mvnc/python:${PYTHONPATH}
 ARG TF_VERSION
+ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y git
@@ -24,8 +25,9 @@ RUN pip3 install --upgrade pip
 
 WORKDIR /ncsdk
 
-RUN apt-get install dialog
-RUN export TERM=linux && make install
+#RUN apt-get install dialog
+#RUN export TERM=linux && make install
+RUN make install
 #RUN make examples
 
 # Go to NCSDK root
