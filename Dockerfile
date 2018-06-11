@@ -1,4 +1,4 @@
-FROM armv7/armhf-ubuntu_core
+FROM armv7/armhf-ubuntu
 MAINTAINER Fabio Magalhaes<fabio.magalhaes@gmail.com>
 
 ENV PYTHONPATH /opt/movidius/mvnc/python:${PYTHONPATH}
